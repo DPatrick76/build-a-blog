@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/main.css" type="text/css" />
+
+<title>Build-a-blog</title>
+</head>
+<body>
+    <a href="/blog" class="main-title">
+    Blog Home
+    </a>
+    <br>
+    <br>
+    <a href="/newpost" class="main-title">
+    Add a Post
+    </a>
+
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>

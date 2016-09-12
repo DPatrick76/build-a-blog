@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>This is the show blog Page.</h2>
+    {% for info in blog_posts %}
+        <div class="art">
+            <div class="blog-title">{{info.title}}</div>
+            <div class="blog-body">{{info.body}}</div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
