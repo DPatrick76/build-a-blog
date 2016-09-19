@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>This is the show blog page.</h2>
+<div style="background-color:yellow;">
+    {% for blog in blog_posts %}
+            <div><a href="/blog/{{blog.key().id()}}">{{blog.title}}</a></div>
+            <div>{{blog.body}}</div>
+    {% endfor %}
+</div>
+
+{% endblock %}

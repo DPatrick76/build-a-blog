@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/static/main.css" type="text/css" />
+<style type="text/css">
+body{background-color: green;}
+h2{color:yellow;}
+a{color: black;}
+a:hover{color: red;}
+</style>
 
-<title>Build-a-blog</title>
+<title>Build-a-blog DP</title>
 </head>
 <body>
     <a href="/blog" class="main-title">
@@ -15,9 +20,8 @@
     Add a Post
     </a>
 
-<div id="content">
     {% block content %}
     {% endblock %}
-</div>
+
 </body>
 </html>
